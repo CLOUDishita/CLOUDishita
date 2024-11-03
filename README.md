@@ -19,10 +19,15 @@ This project’s core is the hand landmark detection and tracking algorithm usin
 ALGORITHM STEPS
 
 1.Frame Capture & Color Conversion: Begin by capturing video frames and convert them to the HSV color space. This color space is more suitable for detecting colors in OpenCV.
+
 2.Canvas Preparation: Set up a blank canvas and create virtual color buttons for ink selection.
+
 3.Hand Detection Configuration: Configure MediaPipe to detect and track only one hand for streamlined interaction.
+
 4.Landmark Detection: Pass each frame through the MediaPipe hand detector to identify hand landmarks in real-time.
+
 5.Coordinate Tracking: Locate the coordinates of the fingertip (forefinger) and store them for consecutive frames. This helps draw a continuous line on the canvas as the finger moves.
+
 6.Drawing on Canvas: Using the stored coordinates, draw on both the frame and the canvas, allowing the air-drawing effect to come to life.
 
 REQUIREMENTS
